@@ -4,7 +4,8 @@
 @string{aps = {American Physical Society,}}
 
 @article{kerssies2022evaluating,
-  title={Evaluating continual test-time adaptation for contextual and semantic domain shifts},
+  abbr={ARXIV},
+  title={Evaluating Continual Test-Time Adaptation for Contextual and Semantic Domain Shifts},
   author={Kerssies, Tommie and K{\i}l{\i}{\c{c}}kaya, Mert and Vanschoren, Joaquin},
   abstract={In this paper, our goal is to adapt a pre-trained convolutional neural network to domain shifts at test time. We do so continually with the incoming stream of test batches, without labels. The existing literature mostly operates on artificial shifts obtained via adversarial perturbations of a test image. Motivated by this, we evaluate the state of the art on two realistic and challenging sources of domain shifts, namely contextual and semantic shifts. Contextual shifts correspond to the environment types, for example, a model pre-trained on indoor context has to adapt to the outdoor context on CORe-50. Semantic shifts correspond to the capture types, for example a model pre-trained on natural images has to adapt to cliparts, sketches, and paintings on DomainNet. We include in our analysis recent techniques such as Prediction-Time Batch Normalization (BN), Test Entropy Minimization (TENT) and Continual Test-Time Adaptation (CoTTA). Our findings are three-fold: i) Test-time adaptation methods perform better and forget less on contextual shifts compared to semantic shifts, ii) TENT outperforms other methods on short-term adaptation, whereas CoTTA outpeforms other methods on long-term adaptation, iii) BN is most reliable and robust.},
   journal={arXiv preprint arXiv:2208.08767},
@@ -14,4 +15,59 @@
   pdf={https://arxiv.org/pdf/2208.08767},
   bibtex_show={true},
   selected={true}
+}
+
+@InProceedings{pmlr-v224-kerssies23a,
+  abbr={PMLR},
+  title = 	 {Neural Architecture Search for Visual Anomaly Segmentation},
+  author =       {Kerssies, Tommie and Vanschoren, Joaquin},
+  booktitle = 	 {Proceedings of the Second International Conference on Automated Machine Learning},
+  pages = 	 {20/1--14},
+  year = 	 {2023},
+  editor = 	 {Faust, Aleksandra and Garnett, Roman and White, Colin and Hutter, Frank and Gardner, Jacob R.},
+  volume = 	 {224},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {12--15 Nov},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v224/kerssies23a/kerssies23a.pdf},
+  url = 	 {https://proceedings.mlr.press/v224/kerssies23a.html},
+  abstract = 	 {This paper presents the first application of neural architecture search to the complex task of segmenting visual anomalies. Measurement of anomaly segmentation performance is challenging due to imbalanced anomaly pixels, varying region areas, and various types of anomalies. First, the region-weighted Average Precision (rwAP) metric is proposed as an alternative to existing metrics, which does not need to be limited to a specific maximum false positive rate. Second, the AutoPatch neural architecture search method is proposed, which enables efficient segmentation of visual anomalies without any training. By leveraging a pre-trained supernet, a black-box optimization algorithm can directly minimize computational complexity and maximize performance on a small validation set of anomalous examples. Finally, compelling results are presented on the widely studied MVTec dataset, demonstrating that AutoPatch outperforms the current state-of-the-art with lower computational complexity, using only one example per type of anomaly. The results highlight the potential of automated machine learning to optimize throughput in industrial quality control.},
+  arxiv={2304.08975},
+  code={https://github.com/tommiekerssies/AutoPatch},
+  bibtex_show={true},  
+  selected={true}
+}
+
+@InProceedings{Englert_2024_CVPR,
+    abbr={CVPR},
+    author    = {Englert, Brun\'o B. and Piva, Fabrizio J. and Kerssies, Tommie and De Geus, Daan and Dubbelman, Gijs},
+    title     = {Exploring the Benefits of Vision Foundation Models for Unsupervised Domain Adaptation},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+    month     = {June},
+    year      = {2024},
+    pages     = {1172-1180},
+    pdf={https://openaccess.thecvf.com/content/CVPR2024W/2WFM/papers/Englert_Exploring_the_Benefits_of_Vision_Foundation_Models_for_Unsupervised_Domain_CVPRW_2024_paper.pdf},
+    url={https://openaccess.thecvf.com/content/CVPR2024W/2WFM/html/Englert_Exploring_the_Benefits_of_Vision_Foundation_Models_for_Unsupervised_Domain_CVPRW_2024_paper.html},
+    abstract={Achieving robust generalization across diverse data domains remains a significant challenge in computer vision. This challenge is important in safety-critical applications, where deep-neural-network-based systems must perform reliably under various environmental conditions not seen during training. Our study investigates whether the generalization capabilities of Vision Foundation Models (VFMs) and Unsupervised Domain Adaptation (UDA) methods for the semantic segmentation task are complementary. Results show that combining VFMs with UDA has two main benefits: (a) it allows for better UDA performance while maintaining the out-of-distribution performance of VFMs, and (b) it makes certain time-consuming UDA components redundant, thus enabling significant inference speedups. Specifically, with equivalent model sizes, the resulting VFM-UDA method achieves an 8.4x speed increase over the prior non-VFM state of the art, while also improving performance by +1.2 mIoU in the UDA setting and by +6.1 mIoU in terms of out-of-distribution generalization. Moreover, when we use a VFM with 3.6x more parameters, the VFM-UDA approach maintains a 3.3x speed up, while improving the UDA performance by +3.1 mIoU and the out-of-distribution performance by +10.3 mIoU. These results underscore the significant benefits of combining VFMs with UDA, setting new standards and baselines for Unsupervised Domain Adaptation in semantic segmentation.},
+    code={https://github.com/tue-mps/vfm-uda},
+    bibtex_show={true},  
+    selected={true}
+}
+
+@InProceedings{Kerssies_2024_CVPR,
+    abbr={CVPR},
+    author    = {Kerssies, Tommie and De Geus, Daan and Dubbelman, Gijs},
+    title     = {How to Benchmark Vision Foundation Models for Semantic Segmentation?},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+    month     = {June},
+    year      = {2024},
+    pages     = {1162-1171},
+    pdf={https://openaccess.thecvf.com/content/CVPR2024W/2WFM/papers/Kerssies_How_to_Benchmark_Vision_Foundation_Models_for_Semantic_Segmentation_CVPRW_2024_paper.pdf},
+    url={https://openaccess.thecvf.com/content/CVPR2024W/2WFM/html/Kerssies_How_to_Benchmark_Vision_Foundation_Models_for_Semantic_Segmentation_CVPRW_2024_paper.html},
+    abstract={Recent vision foundation models (VFMs) have demonstrated proficiency in various tasks but require supervised fine-tuning to perform the task of semantic segmentation effectively. Benchmarking their performance is essential for selecting current models and guiding future model developments for this task. The lack of a standardized benchmark complicates comparisons. Therefore, the primary objective of this paper is to study how VFMs should be benchmarked for semantic segmentation. To do so, various VFMs are fine-tuned under various settings, and the impact of individual settings on the performance ranking and training time is assessed. Based on the results, the recommendation is to fine-tune the ViT-B variants of VFMs with a 16x16 patch size and a linear decoder, as these settings are representative of using a larger model, more advanced decoder and smaller patch size, while reducing training time by more than 13 times. Using multiple datasets for training and evaluation is also recommended, as the performance ranking across datasets and domain shifts varies. Linear probing, a common practice for some VFMs, is not recommended, as it is not representative of end-to-end fine-tuning. The benchmarking setup recommended in this paper enables a performance analysis of VFMs for semantic segmentation. The findings of such an analysis reveal that pretraining with promptable segmentation is not beneficial, whereas masked image modeling (MIM) with abstract representations is crucial, even more important than the type of supervision used. The code for efficiently fine-tuning VFMs for semantic segmentation can be accessed through the project page.},
+    arxiv={2404.12172}
+    project_page={https://tue-mps.github.io/benchmark-vfm-ss/},
+    code={https://github.com/tue-mps/benchmark-vfm-ss},
+    bibtex_show={true},  
+    selected={true}
 }
