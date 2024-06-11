@@ -5,7 +5,7 @@ permalink: /
 subtitle: PhD Candidate in AI at <a href="https://www.tue.nl">TU/e</a> <a href="https://www.tue-mps.org/">MPS Lab</a>
 
 profile:
-  align: center
+  align: left
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
