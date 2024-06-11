@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD Candidate in AI at [TU/e](tue.nl) [MPS Lab](https://www.tue-mps.org/)
+subtitle: PhD Candidate in AI at <a href="https://www.tue.nl">TU/e</a> <a href="https://www.tue-mps.org/">MPS Lab</a>
 
 profile:
   align: right
