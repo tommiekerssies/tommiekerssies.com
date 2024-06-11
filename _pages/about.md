@@ -12,7 +12,7 @@ profile:
     <p>Flux 6.196</p><br/>
     <p>Eindhoven University of Technology</p><br/>
     <p>The Netherlands</p><br/>
-    <p>t.kerssies[at]tue[dot]nl</p><br/>
+    <p>t.kerssies[at]tue[dot]nl</p><br/><br/>
 
 news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
