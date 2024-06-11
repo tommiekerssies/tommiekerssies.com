@@ -9,10 +9,10 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Flux 6.196</p>
-    <p>Eindhoven University of Technology</p>
-    <p>The Netherlands</p>
-    <p>t.kerssies[at]tue[dot]nl</p>
+    <p>Flux 6.196</p><br/>
+    <p>Eindhoven University of Technology</p><br/>
+    <p>The Netherlands</p><br/>
+    <p>t.kerssies[at]tue[dot]nl</p><br/>
 
 news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
