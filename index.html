@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tommie Kerssies</title>
+  <meta name="description" content="Website of Tommie Kerssies, AI researcher.">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VBJ51KR3BZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VBJ51KR3BZ');
+  </script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+      color: #222;
+      line-height: 1.6;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 24px 32px;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header / Profile */
+    .profile {
+      display: flex;
+      gap: 32px;
+      align-items: flex-start;
+      margin-bottom: 48px;
+    }
+
+    .profile img {
+      width: 200px;
+      height: 200px;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .profile h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .profile .subtitle {
+      color: #555;
+      margin-bottom: 12px;
+    }
+
+    .profile .info {
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.8;
+    }
+
+    .links {
+      margin-top: 12px;
+      display: flex;
+      gap: 16px;
+      font-size: 0.9rem;
+    }
+
+    /* Sections */
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    /* Publications */
+    a.pub {
+      display: block;
+      margin-bottom: 20px;
+      color: inherit;
+    }
+
+    a.pub:hover {
+      text-decoration: none;
+    }
+
+    a.pub:hover .title {
+      text-decoration: underline;
+    }
+
+    a.pub:last-child {
+      margin-bottom: 0;
+    }
+
+    .pub .title {
+      font-weight: 600;
+    }
+
+    .pub .authors {
+      font-size: 0.9rem;
+      color: #444;
+    }
+
+    .pub .authors .me {
+      text-decoration: underline;
+    }
+
+    .pub .venue {
+      font-size: 0.85rem;
+      color: #777;
+    }
+
+    .pub .highlight {
+      display: inline-block;
+      border: 1px solid #222;
+      color: #222;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 1px 7px;
+      border-radius: 3px;
+      margin-left: 6px;
+    }
+
+    .pub .badge-new {
+      display: inline-block;
+      background: #222;
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 1px 7px;
+      border-radius: 3px;
+      margin-left: 6px;
+    }
+
+
+    /* Responsive */
+    @media (max-width: 560px) {
+      .profile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .links { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="profile">
+  <img src="assets/img/prof_pic_sq.jpg" alt="Tommie Kerssies">
+  <div>
+    <h1>Tommie Kerssies</h1>
+    <div class="subtitle">Applied Scientist Intern &middot; PhD Candidate</div>
+    <div class="info">
+      Frontier AI &amp; Robotics, Amazon &ndash; San Francisco, USA<br>
+      Mobile Perception Systems Lab, TU/e &ndash; Eindhoven, Netherlands<br>
+      t.kerssies[at]tue[dot]nl
+    </div>
+    <div class="links">
+      <a href="https://scholar.google.com/citations?user=rrJn-eEAAAAJ">Google Scholar</a>
+      <a href="https://x.com/tommiekerssies">X</a>
+      <a href="https://linkedin.com/in/tommie-kerssies">LinkedIn</a>
+    </div>
+  </div>
+</div>
+
+<section class="other">
+  <h2>Publications</h2>
+
+  <a class="pub" href="https://deltatok.github.io">
+    <div class="title">A Frame is Worth One Token: Efficient Generative World Modeling with Delta Tokens</div>
+    <div class="authors"><span class="me">Tommie Kerssies</span>, Gabriele Berton, Ju He, Qihang Yu, Wufei Ma, Daan de Geus, Gijs Dubbelman, Liang-Chieh Chen</div>
+    <div class="venue">CVPR 2026 <span class="badge-new">New</span></div>
+  </a>
+
+  <a class="pub" href="https://www.tue-mps.org/videomt/">
+    <div class="title">VidEoMT: Your ViT is Secretly Also a Video Segmentation Model</div>
+    <div class="authors">Narges Norouzi, Idil Esen Zulfikar, Niccol&ograve; Cavagnero, <span class="me">Tommie Kerssies</span>, Bastian Leibe, Gijs Dubbelman, Daan de Geus</div>
+    <div class="venue">CVPR 2026</div>
+  </a>
+
+  <a class="pub" href="https://arxiv.org/abs/2506.04598">
+    <div class="title">Scaling Laws for Robust Comparison of Open Foundation Language-Vision Models and Datasets</div>
+    <div class="authors">Marianna Nezhurina, Tomer Porian, Giovanni Pucceti, <span class="me">Tommie Kerssies</span>, Romain Beaumont, Mehdi Cherti, Jenia Jitsev</div>
+    <div class="venue">NeurIPS 2025</div>
+  </a>
+
+  <a class="pub" href="https://www.tue-mps.org/eomt/">
+    <div class="title">Your ViT is Secretly an Image Segmentation Model</div>
+    <div class="authors"><span class="me">Tommie Kerssies</span>, Niccol&ograve; Cavagnero, Alexander Hermans, Narges Norouzi, Giuseppe Averta, Bastian Leibe, Gijs Dubbelman, Daan de Geus</div>
+    <div class="venue">CVPR 2025 <span class="highlight">Highlight Paper (Top 3%)</span></div>
+  </a>
+
+  <a class="pub" href="https://arxiv.org/abs/2507.09338">
+    <div class="title">Simplifying Traffic Anomaly Detection with Video Foundation Models</div>
+    <div class="authors">Svetlana Orlova, <span class="me">Tommie Kerssies</span>, Brun&oacute; B. Englert, Gijs Dubbelman</div>
+    <div class="venue">ICCV Workshops 2025</div>
+  </a>
+
+  <a class="pub" href="https://arxiv.org/abs/2504.18190">
+    <div class="title">What is the Added Value of UDA in the VFM Era?</div>
+    <div class="authors">Brun&oacute; B. Englert, <span class="me">Tommie Kerssies</span>, Gijs Dubbelman</div>
+    <div class="venue">CVPR Workshops 2025</div>
+  </a>
+
+  <a class="pub" href="https://arxiv.org/abs/2409.15107">
+    <div class="title">The BRAVO Semantic Segmentation Challenge Results in UNCV2024</div>
+    <div class="authors">Tuan-Hung Vu, Eduardo Valle, Andrei Bursuc, <span class="me">Tommie Kerssies</span>, Daan de Geus, Gijs Dubbelman, et al.</div>
+    <div class="venue">ECCV Workshops 2024</div>
+  </a>
+
+  <a class="pub" href="https://arxiv.org/abs/2409.17208">
+    <div class="title">First Place Solution to the ECCV 2024 BRAVO Challenge: Evaluating Robustness of Vision Foundation Models for Semantic Segmentation</div>
+    <div class="authors"><span class="me">Tommie Kerssies</span>, Daan de Geus, Gijs Dubbelman</div>
+    <div class="venue">arXiv 2024</div>
+  </a>
+
+  <a class="pub" href="https://www.tue-mps.org/benchmark-vfm-ss/">
+    <div class="title">How to Benchmark Vision Foundation Models for Semantic Segmentation?</div>
+    <div class="authors"><span class="me">Tommie Kerssies</span>, Daan de Geus, Gijs Dubbelman</div>
+    <div class="venue">CVPR Workshops 2024</div>
+  </a>
+
+  <a class="pub" href="https://arxiv.org/abs/2406.09896">
+    <div class="title">Exploring the Benefits of Vision Foundation Models for Unsupervised Domain Adaptation</div>
+    <div class="authors">Brun&oacute; B. Englert, Fabrizio J. Piva, <span class="me">Tommie Kerssies</span>, Daan de Geus, Gijs Dubbelman</div>
+    <div class="venue">CVPR Workshops 2024</div>
+  </a>
+
+  <a class="pub" href="https://arxiv.org/abs/2304.08975">
+    <div class="title">Neural Architecture Search for Visual Anomaly Segmentation</div>
+    <div class="authors"><span class="me">Tommie Kerssies</span>, Joaquin Vanschoren</div>
+    <div class="venue">AutoML (PMLR) 2023</div>
+  </a>
+
+  <a class="pub" href="https://arxiv.org/abs/2208.08767">
+    <div class="title">Evaluating Continual Test-Time Adaptation for Contextual and Semantic Domain Shifts</div>
+    <div class="authors"><span class="me">Tommie Kerssies</span>, Mert K&#305;l&#305;&ccedil;kaya, Joaquin Vanschoren</div>
+    <div class="venue">arXiv 2022</div>
+  </a>
+</section>
+
+</body>
+</html>
