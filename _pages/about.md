@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD Candidate in AI at MPS Lab
+subtitle: PhD Candidate in AI at MPS Lab TU/e
 
 profile:
   align: left
