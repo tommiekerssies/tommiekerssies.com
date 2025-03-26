@@ -1,7 +1,22 @@
 ---
 ---
 
-@article{kerssies2022evaluating,
+@inproceedings{kerssies2025eomt,
+    abbr={CVPR},
+    author    = {Kerssies, Tommie and Cavagnero, Niccolò and Hermans, Alexander and Norouzi, Narges and Averta, Giuseppe and Leibe, Bastian and Dubbelman, Gijs and de Geus, Daan},
+    title     = {Your ViT is Secretly an Image Segmentation Model},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year      = {2025},
+    url={https://cvpr.thecvf.com/virtual/2025/poster/33107},
+    abstract={Vision Transformers (ViTs) have shown remarkable performance and scalability across various computer vision tasks. To apply single-scale ViTs to image segmentation, existing methods adopt a convolutional adapter to generate multi-scale features, a pixel decoder to fuse these features, and a Transformer decoder that uses the fused features to make predictions. In this paper, we show that the inductive biases introduced by these task-specific components can instead be learned by the ViT itself, given sufficiently large models and extensive pre-training. Based on these findings, we introduce the Encoder-only Mask Transformer (EoMT), which repurposes the plain ViT architecture to conduct image segmentation. With large-scale models and pre-training, EoMT obtains a segmentation accuracy similar to state-of-the-art models that use task-specific components. At the same time, EoMT is significantly faster than these methods due to its architectural simplicity, e.g., up to 4x faster with ViT-L. Across a range of model sizes, EoMT demonstrates an optimal balance between segmentation accuracy and prediction speed, suggesting that compute resources are better spent on scaling the ViT itself rather than adding architectural complexity.},
+    arxiv={2503.19108},
+    project_page={https://www.tue-mps.org/eomt/},
+    code={https://github.com/tue-mps/eomt/},
+    bibtex_show={true},  
+    selected={true}
+}
+
+@article{kerssies2024evaluating,
   abbr={ARXIV},
   title={First Place Solution to the ECCV 2024 BRAVO Challenge: Evaluating Robustness of Vision Foundation Models for Semantic Segmentation},
   author={Kerssies, Tommie and de Geus, Daan and Dubbelman, Gijs},
@@ -17,7 +32,7 @@
 }
 
 @inproceedings{vu2024bravo,
-  abbr={ECCV},
+  abbr={ECCVW},
   title={The BRAVO Semantic Segmentation Challenge Results in UNCV2024},
   author={Vu, Tuan-Hung and Valle, Eduardo and Bursuc, Andrei and Kerssies, Tommie and de Geus, Daan and Dubbelman, Gijs and Qian, Long and Zhu, Bingke and Chen, Yingying and Tang, Ming and Wang, Jinqiao and Vojíř, Tomáš and Šochman, Jan and Matas, Jiří and Smith, Michael and Ferrie, Frank and Basu, Shamik and Sakaridis, Christos and Van Gool, Luc},
   booktitle={Proceedings of the European Conference on Computer Vision (ECCV) Workshops},
@@ -30,8 +45,8 @@
   selected={true}
 }
 
-@InProceedings{Kerssies_2024_CVPR,
-    abbr={CVPR},
+@inproceedings{kerssies2024benchmarking,
+    abbr={CVPRW},
     author    = {Kerssies, Tommie and De Geus, Daan and Dubbelman, Gijs},
     title     = {How to Benchmark Vision Foundation Models for Semantic Segmentation?},
     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
@@ -42,14 +57,14 @@
     url={https://openaccess.thecvf.com/content/CVPR2024W/2WFM/html/Kerssies_How_to_Benchmark_Vision_Foundation_Models_for_Semantic_Segmentation_CVPRW_2024_paper.html},
     abstract={Recent vision foundation models (VFMs) have demonstrated proficiency in various tasks but require supervised fine-tuning to perform the task of semantic segmentation effectively. Benchmarking their performance is essential for selecting current models and guiding future model developments for this task. The lack of a standardized benchmark complicates comparisons. Therefore, the primary objective of this paper is to study how VFMs should be benchmarked for semantic segmentation. To do so, various VFMs are fine-tuned under various settings, and the impact of individual settings on the performance ranking and training time is assessed. Based on the results, the recommendation is to fine-tune the ViT-B variants of VFMs with a 16x16 patch size and a linear decoder, as these settings are representative of using a larger model, more advanced decoder and smaller patch size, while reducing training time by more than 13 times. Using multiple datasets for training and evaluation is also recommended, as the performance ranking across datasets and domain shifts varies. Linear probing, a common practice for some VFMs, is not recommended, as it is not representative of end-to-end fine-tuning. The benchmarking setup recommended in this paper enables a performance analysis of VFMs for semantic segmentation. The findings of such an analysis reveal that pretraining with promptable segmentation is not beneficial, whereas masked image modeling (MIM) with abstract representations is crucial, even more important than the type of supervision used. The code for efficiently fine-tuning VFMs for semantic segmentation can be accessed through the project page.},
     arxiv={2404.12172},
-    project_page={https://tue-mps.github.io/benchmark-vfm-ss/},
+    project_page={https://www.tue-mps.org/benchmark-vfm-ss/},
     code={https://github.com/tue-mps/benchmark-vfm-ss},
     bibtex_show={true},  
     selected={true}
 }
 
-@InProceedings{Englert_2024_CVPR,
-    abbr={CVPR},
+@inproceedings{Englert_2024_CVPR,
+    abbr={CVPRW},
     author    = {Englert, Brun\'o B. and Piva, Fabrizio J. and Kerssies, Tommie and De Geus, Daan and Dubbelman, Gijs},
     title     = {Exploring the Benefits of Vision Foundation Models for Unsupervised Domain Adaptation},
     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
@@ -65,7 +80,7 @@
     selected={true}
 }
 
-@InProceedings{pmlr-v224-kerssies23a,
+@inproceedings{pmlr-v224-kerssies23a,
   abbr={PMLR},
   title = 	 {Neural Architecture Search for Visual Anomaly Segmentation},
   author =       {Kerssies, Tommie and Vanschoren, Joaquin},
