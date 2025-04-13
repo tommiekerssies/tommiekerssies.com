@@ -170,6 +170,12 @@
       {{ entry.note | strip }}
     </div>
 
+    {% if entry.highlight %}
+      <div class="mt-1">
+        <span class="badge bg-success">🎖 CVPR Highlight Paper (Top 3.5%)</span>
+      </div>
+    {% endif %}
+
     <!-- Links/Buttons -->
     <div class="links">
       {% if entry.award %}
