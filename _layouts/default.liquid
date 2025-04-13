@@ -1,11 +1,7 @@
 <!doctype html>
-<html lang="{{ site.lang }}">
+<html lang="{{ site.lang }}" data-theme="dark">
   <!-- Head -->
   <head>
-    <script>
-      document.documentElement.setAttribute("data-theme", "dark");
-      localStorage.setItem("theme", "dark");
-    </script>
     {% if page.redirect %}
       {% if page.redirect == true %}
         {% assign redirect = site.baseurl | append: '/' %}
