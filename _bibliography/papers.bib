@@ -17,7 +17,20 @@
     highlight = {true}
 }
 
-@article{kerssies2024evaluating,
+@inproceedings{englert2025uda,
+    abbr={CVPRW},
+    author    = {Englert, Brun\'o B. and Kerssies, Tommie and Dubbelman, Gijs},
+    title     = {What is the Added Value of UDA in the VFM Era?},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+    month     = {June},
+    year      = {2025},
+    abstract={Unsupervised Domain Adaptation (UDA) can improve a perception model’s generalization to an unlabeled target domain starting from a labeled source domain. UDA using Vision Foundation Models (VFMs) with synthetic source data can achieve generalization performance comparable to fully-supervised learning with real target data. However, because VFMs have strong generalization from their pre-training, more straightforward, source-only fine-tuning can also perform well on the target. As data scenarios used in academic research are not necessarily representative for real-world applications, it is currently unclear (a) how UDA behaves with more representative and diverse data and (b) if source-only fine-tuning of VFMs can perform equally well in these scenarios. Our research aims to close these gaps and, similar to previous studies, we focus on semantic segmentation as a representative perception task. We assess UDA for synth-to-real and real-to-real use cases with different source and target data combinations. We also investigate the effect of using a small amount of labeled target data in UDA. We clarify that while these scenarios are more realistic, they are not necessarily more challenging. Our results show that, when using stronger synthetic source data, UDA’s improvement over source-only fine-tuning of VFMs reduces from +8 mIoU to +2 mIoU, and when using more diverse real source data, UDA has no added value. However, UDA generalization is always higher in all synthetic data scenarios than source-only finetuning and, when including only 1/16 of Cityscapes labels, synthetic UDA obtains the same state-of-the-art segmentation quality of 85 mIoU as a fully-supervised model using all labels. Considering the mixed results, we discuss how UDA can best support robust autonomous driving at scale.},
+    arxiv={2504.18190},   
+    bibtex_show={true},  
+    selected={true}
+}
+
+@article{kerssies2024bravo,
   abbr={ARXIV},
   title={First Place Solution to the ECCV 2024 BRAVO Challenge: Evaluating Robustness of Vision Foundation Models for Semantic Segmentation},
   author={Kerssies, Tommie and de Geus, Daan and Dubbelman, Gijs},
@@ -64,7 +77,7 @@
     selected={true}
 }
 
-@inproceedings{Englert_2024_CVPR,
+@inproceedings{englert2024uda,
     abbr={CVPRW},
     author    = {Englert, Brun\'o B. and Piva, Fabrizio J. and Kerssies, Tommie and De Geus, Daan and Dubbelman, Gijs},
     title     = {Exploring the Benefits of Vision Foundation Models for Unsupervised Domain Adaptation},
@@ -81,7 +94,7 @@
     selected={true}
 }
 
-@inproceedings{pmlr-v224-kerssies23a,
+@inproceedings{kerssies2023nas,
   abbr={PMLR},
   title = 	 {Neural Architecture Search for Visual Anomaly Segmentation},
   author =       {Kerssies, Tommie and Vanschoren, Joaquin},
@@ -102,7 +115,7 @@
   selected={true}
 }
 
-@article{kerssies2022evaluating,
+@article{kerssies2022tta,
   abbr={ARXIV},
   title={Evaluating Continual Test-Time Adaptation for Contextual and Semantic Domain Shifts},
   author={Kerssies, Tommie and K{\i}l{\i}{\c{c}}kaya, Mert and Vanschoren, Joaquin},
