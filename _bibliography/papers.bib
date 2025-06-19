@@ -1,6 +1,21 @@
 ---
 ---
 
+@article{nezhurina2025scaling,
+    abbr={ARXIV},
+    author={Nezhurina, Marianna and Porian, Tomer and Pucceti, Giovanni and Kerssies, Tommie and Beaumont, Romain and Cherti, Mehdi and Jitsev, Jenia},
+    title={Scaling Laws for Robust Comparison of Open Foundation Language-Vision Models and Datasets},
+    abstract={In studies of transferable learning, scaling laws are obtained for various important foundation models to predict their properties and performance at larger scales. We show here how scaling law derivation can also be used for model and dataset comparison, allowing to decide which procedure is to be preferred for pre-training. For the first time, full scaling laws based on dense measurements across a wide span of model and samples seen scales are derived for two important language-vision learning procedures, CLIP and MaMMUT, that use either contrastive only or contrastive and captioning text generative loss. Ensuring sufficient prediction accuracy for held out points, we use derived scaling laws to compare both models, obtaining evidence for MaMMUT’s stronger improvement with scale and better sample efficiency than standard CLIP. To strengthen validity of the comparison, we show scaling laws for various downstream tasks, classification, retrieval, and segmentation, and for different open datasets, DataComp, DFN and Re-LAION, observing consistently the same trends. We show that comparison can also be performed when deriving scaling laws with a constant learning rate schedule, reducing compute cost. Accurate derivation of scaling laws provides thus means to perform model and dataset comparison across scale spans, avoiding misleading conclusions based on measurements from single reference scales only, paving the road for systematic comparison and improvement of open foundation models and datasets for their creation.},
+    journal={arXiv preprint arXiv:2506.04598},
+    year={2025},
+    month={June},
+    arxiv={2506.04598},
+    code={https://github.com/LAION-AI/scaling-laws-for-comparison},
+    pdf={https://arxiv.org/pdf/2506.04598},
+    bibtex_show={true},
+    selected={false}
+}
+
 @inproceedings{kerssies2025eomt,
     abbr={CVPR},
     author    = {Kerssies, Tommie and Cavagnero, Niccolò and Hermans, Alexander and Norouzi, Narges and Averta, Giuseppe and Leibe, Bastian and Dubbelman, Gijs and de Geus, Daan},
@@ -27,7 +42,7 @@
     abstract={Unsupervised Domain Adaptation (UDA) can improve a perception model’s generalization to an unlabeled target domain starting from a labeled source domain. UDA using Vision Foundation Models (VFMs) with synthetic source data can achieve generalization performance comparable to fully-supervised learning with real target data. However, because VFMs have strong generalization from their pre-training, more straightforward, source-only fine-tuning can also perform well on the target. As data scenarios used in academic research are not necessarily representative for real-world applications, it is currently unclear (a) how UDA behaves with more representative and diverse data and (b) if source-only fine-tuning of VFMs can perform equally well in these scenarios. Our research aims to close these gaps and, similar to previous studies, we focus on semantic segmentation as a representative perception task. We assess UDA for synth-to-real and real-to-real use cases with different source and target data combinations. We also investigate the effect of using a small amount of labeled target data in UDA. We clarify that while these scenarios are more realistic, they are not necessarily more challenging. Our results show that, when using stronger synthetic source data, UDA’s improvement over source-only fine-tuning of VFMs reduces from +8 mIoU to +2 mIoU, and when using more diverse real source data, UDA has no added value. However, UDA generalization is always higher in all synthetic data scenarios than source-only finetuning and, when including only 1/16 of Cityscapes labels, synthetic UDA obtains the same state-of-the-art segmentation quality of 85 mIoU as a fully-supervised model using all labels. Considering the mixed results, we discuss how UDA can best support robust autonomous driving at scale.},
     arxiv={2504.18190},   
     bibtex_show={true},  
-    selected={true}
+    selected={false}
 }
 
 @article{kerssies2024bravo,
@@ -42,7 +57,7 @@
   code={https://github.com/tue-mps/benchmark-vfm-ss},
   pdf={https://arxiv.org/pdf/2409.17208},
   bibtex_show={true},
-  selected={true}
+  selected={false}
 }
 
 @inproceedings{vu2024bravo,
@@ -56,7 +71,7 @@
   code={https://github.com/valeoai/bravo_challenge},
   abstract={We propose the unified BRAVO challenge to benchmark the reliability of semantic segmentation models under realistic perturbations and unknown out-of-distribution (OOD) scenarios. We define two categories of reliability: (1) semantic reliability, which reflects the model's accuracy and calibration when exposed to various perturbations; and (2) OOD reliability, which measures the model's ability to detect object classes that are unknown during training. The challenge attracted nearly 100 submissions from international teams representing notable research institutions. The results reveal interesting insights into the importance of large-scale pre-training and minimal architectural design in developing robust and reliable semantic segmentation models.},
   bibtex_show={true},  
-  selected={true}
+  selected={false}
 }
 
 @inproceedings{kerssies2024benchmarking,
@@ -91,7 +106,7 @@
     arxiv={2406.09896},   
     code={https://github.com/tue-mps/vfm-uda},
     bibtex_show={true},  
-    selected={true}
+    selected={false}
 }
 
 @inproceedings{kerssies2023nas,
@@ -127,5 +142,5 @@
   code={https://github.com/tommiekerssies/Evaluating-Continual-Test-Time-Adaptation-for-Contextual-and-Semantic-Domain-Shifts},
   pdf={https://arxiv.org/pdf/2208.08767},
   bibtex_show={true},
-  selected={true}
+  selected={false}
 }
