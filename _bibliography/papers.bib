@@ -30,13 +30,28 @@
     selected={false}
 }
 
+@inproceedings{englert2025uda,
+    abbr={CVPRW},
+    author    = {Englert, Brun\'o B. and Kerssies, Tommie and Dubbelman, Gijs},
+    title     = {What is the Added Value of UDA in the VFM Era?},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+    year      = {2025},
+    abstract={Unsupervised Domain Adaptation (UDA) can improve a perception model’s generalization to an unlabeled target domain starting from a labeled source domain. UDA using Vision Foundation Models (VFMs) with synthetic source data can achieve generalization performance comparable to fully-supervised learning with real target data. However, because VFMs have strong generalization from their pre-training, more straightforward, source-only fine-tuning can also perform well on the target. As data scenarios used in academic research are not necessarily representative for real-world applications, it is currently unclear (a) how UDA behaves with more representative and diverse data and (b) if source-only fine-tuning of VFMs can perform equally well in these scenarios. Our research aims to close these gaps and, similar to previous studies, we focus on semantic segmentation as a representative perception task. We assess UDA for synth-to-real and real-to-real use cases with different source and target data combinations. We also investigate the effect of using a small amount of labeled target data in UDA. We clarify that while these scenarios are more realistic, they are not necessarily more challenging. Our results show that, when using stronger synthetic source data, UDA’s improvement over source-only fine-tuning of VFMs reduces from +8 mIoU to +2 mIoU, and when using more diverse real source data, UDA has no added value. However, UDA generalization is always higher in all synthetic data scenarios than source-only finetuning and, when including only 1/16 of Cityscapes labels, synthetic UDA obtains the same state-of-the-art segmentation quality of 85 mIoU as a fully-supervised model using all labels. Considering the mixed results, we discuss how UDA can best support robust autonomous driving at scale.},
+    arxiv={2504.18190},   
+    url={https://openaccess.thecvf.com/content/CVPR2025W/WAD/html/Englert_What_is_the_Added_Value_of_UDA_in_the_VFM_CVPRW_2025_paper.html},
+    pdf={https://openaccess.thecvf.com/content/CVPR2025W/WAD/papers/Englert_What_is_the_Added_Value_of_UDA_in_the_VFM_CVPRW_2025_paper.pdf},
+    bibtex_show={true},  
+    selected={false}
+}
+
 @inproceedings{kerssies2025eomt,
     abbr={CVPR},
     author    = {Kerssies, Tommie and Cavagnero, Niccolò and Hermans, Alexander and Norouzi, Narges and Averta, Giuseppe and Leibe, Bastian and Dubbelman, Gijs and de Geus, Daan},
     title     = {Your ViT is Secretly an Image Segmentation Model},
     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
     year      = {2025},
-    url={https://cvpr.thecvf.com/virtual/2025/poster/33107},
+    url={https://openaccess.thecvf.com/content/CVPR2025/html/Kerssies_Your_ViT_is_Secretly_an_Image_Segmentation_Model_CVPR_2025_paper.html},
+    pdf={https://openaccess.thecvf.com/content/CVPR2025/papers/Kerssies_Your_ViT_is_Secretly_an_Image_Segmentation_Model_CVPR_2025_paper.pdf},
     abstract={Vision Transformers (ViTs) have shown remarkable performance and scalability across various computer vision tasks. To apply single-scale ViTs to image segmentation, existing methods adopt a convolutional adapter to generate multi-scale features, a pixel decoder to fuse these features, and a Transformer decoder that uses the fused features to make predictions. In this paper, we show that the inductive biases introduced by these task-specific components can instead be learned by the ViT itself, given sufficiently large models and extensive pre-training. Based on these findings, we introduce the Encoder-only Mask Transformer (EoMT), which repurposes the plain ViT architecture to conduct image segmentation. With large-scale models and pre-training, EoMT obtains a segmentation accuracy similar to state-of-the-art models that use task-specific components. At the same time, EoMT is significantly faster than these methods due to its architectural simplicity, e.g., up to 4x faster with ViT-L. Across a range of model sizes, EoMT demonstrates an optimal balance between segmentation accuracy and prediction speed, suggesting that compute resources are better spent on scaling the ViT itself rather than adding architectural complexity.},
     arxiv={2503.19108},
     project_page={https://www.tue-mps.org/eomt/},
@@ -46,16 +61,19 @@
     highlight = {true}
 }
 
-@inproceedings{englert2025uda,
-    abbr={CVPRW},
-    author    = {Englert, Brun\'o B. and Kerssies, Tommie and Dubbelman, Gijs},
-    title     = {What is the Added Value of UDA in the VFM Era?},
-    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
-    year      = {2025},
-    abstract={Unsupervised Domain Adaptation (UDA) can improve a perception model’s generalization to an unlabeled target domain starting from a labeled source domain. UDA using Vision Foundation Models (VFMs) with synthetic source data can achieve generalization performance comparable to fully-supervised learning with real target data. However, because VFMs have strong generalization from their pre-training, more straightforward, source-only fine-tuning can also perform well on the target. As data scenarios used in academic research are not necessarily representative for real-world applications, it is currently unclear (a) how UDA behaves with more representative and diverse data and (b) if source-only fine-tuning of VFMs can perform equally well in these scenarios. Our research aims to close these gaps and, similar to previous studies, we focus on semantic segmentation as a representative perception task. We assess UDA for synth-to-real and real-to-real use cases with different source and target data combinations. We also investigate the effect of using a small amount of labeled target data in UDA. We clarify that while these scenarios are more realistic, they are not necessarily more challenging. Our results show that, when using stronger synthetic source data, UDA’s improvement over source-only fine-tuning of VFMs reduces from +8 mIoU to +2 mIoU, and when using more diverse real source data, UDA has no added value. However, UDA generalization is always higher in all synthetic data scenarios than source-only finetuning and, when including only 1/16 of Cityscapes labels, synthetic UDA obtains the same state-of-the-art segmentation quality of 85 mIoU as a fully-supervised model using all labels. Considering the mixed results, we discuss how UDA can best support robust autonomous driving at scale.},
-    arxiv={2504.18190},   
-    bibtex_show={true},  
-    selected={false}
+@inproceedings{vu2024bravo,
+  abbr={ECCVW},
+  title={The BRAVO Semantic Segmentation Challenge Results in UNCV2024},
+  author={Vu, Tuan-Hung and Valle, Eduardo and Bursuc, Andrei and Kerssies, Tommie and de Geus, Daan and Dubbelman, Gijs and Qian, Long and Zhu, Bingke and Chen, Yingying and Tang, Ming and Wang, Jinqiao and Vojíř, Tomáš and Šochman, Jan and Matas, Jiří and Smith, Michael and Ferrie, Frank and Basu, Shamik and Sakaridis, Christos and Van Gool, Luc},
+  booktitle={Proceedings of the European Conference on Computer Vision (ECCV) Workshops},
+  year={2024},
+  arxiv={2409.15107},
+  pdf={https://arxiv.org/pdf/2409.15107},
+  url={https://link.springer.com/chapter/10.1007/978-3-031-91585-7_18},
+  code={https://github.com/valeoai/bravo_challenge},
+  abstract={We propose the unified BRAVO challenge to benchmark the reliability of semantic segmentation models under realistic perturbations and unknown out-of-distribution (OOD) scenarios. We define two categories of reliability: (1) semantic reliability, which reflects the model's accuracy and calibration when exposed to various perturbations; and (2) OOD reliability, which measures the model's ability to detect object classes that are unknown during training. The challenge attracted nearly 100 submissions from international teams representing notable research institutions. The results reveal interesting insights into the importance of large-scale pre-training and minimal architectural design in developing robust and reliable semantic segmentation models.},
+  bibtex_show={true},  
+  selected={false}
 }
 
 @article{kerssies2024bravo,
@@ -72,17 +90,20 @@
   selected={false}
 }
 
-@inproceedings{vu2024bravo,
-  abbr={ECCVW},
-  title={The BRAVO Semantic Segmentation Challenge Results in UNCV2024},
-  author={Vu, Tuan-Hung and Valle, Eduardo and Bursuc, Andrei and Kerssies, Tommie and de Geus, Daan and Dubbelman, Gijs and Qian, Long and Zhu, Bingke and Chen, Yingying and Tang, Ming and Wang, Jinqiao and Vojíř, Tomáš and Šochman, Jan and Matas, Jiří and Smith, Michael and Ferrie, Frank and Basu, Shamik and Sakaridis, Christos and Van Gool, Luc},
-  booktitle={Proceedings of the European Conference on Computer Vision (ECCV) Workshops},
-  year={2024},
-  arxiv={2409.15107},
-  code={https://github.com/valeoai/bravo_challenge},
-  abstract={We propose the unified BRAVO challenge to benchmark the reliability of semantic segmentation models under realistic perturbations and unknown out-of-distribution (OOD) scenarios. We define two categories of reliability: (1) semantic reliability, which reflects the model's accuracy and calibration when exposed to various perturbations; and (2) OOD reliability, which measures the model's ability to detect object classes that are unknown during training. The challenge attracted nearly 100 submissions from international teams representing notable research institutions. The results reveal interesting insights into the importance of large-scale pre-training and minimal architectural design in developing robust and reliable semantic segmentation models.},
-  bibtex_show={true},  
-  selected={false}
+@inproceedings{englert2024uda,
+    abbr={CVPRW},
+    author    = {Englert, Brun\'o B. and Piva, Fabrizio J. and Kerssies, Tommie and De Geus, Daan and Dubbelman, Gijs},
+    title     = {Exploring the Benefits of Vision Foundation Models for Unsupervised Domain Adaptation},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+    year      = {2024},
+    pages     = {1172-1180},
+    pdf={https://openaccess.thecvf.com/content/CVPR2024W/2WFM/papers/Englert_Exploring_the_Benefits_of_Vision_Foundation_Models_for_Unsupervised_Domain_CVPRW_2024_paper.pdf},
+    url={https://openaccess.thecvf.com/content/CVPR2024W/2WFM/html/Englert_Exploring_the_Benefits_of_Vision_Foundation_Models_for_Unsupervised_Domain_CVPRW_2024_paper.html},
+    abstract={Achieving robust generalization across diverse data domains remains a significant challenge in computer vision. This challenge is important in safety-critical applications, where deep-neural-network-based systems must perform reliably under various environmental conditions not seen during training. Our study investigates whether the generalization capabilities of Vision Foundation Models (VFMs) and Unsupervised Domain Adaptation (UDA) methods for the semantic segmentation task are complementary. Results show that combining VFMs with UDA has two main benefits: (a) it allows for better UDA performance while maintaining the out-of-distribution performance of VFMs, and (b) it makes certain time-consuming UDA components redundant, thus enabling significant inference speedups. Specifically, with equivalent model sizes, the resulting VFM-UDA method achieves an 8.4x speed increase over the prior non-VFM state of the art, while also improving performance by +1.2 mIoU in the UDA setting and by +6.1 mIoU in terms of out-of-distribution generalization. Moreover, when we use a VFM with 3.6x more parameters, the VFM-UDA approach maintains a 3.3x speed up, while improving the UDA performance by +3.1 mIoU and the out-of-distribution performance by +10.3 mIoU. These results underscore the significant benefits of combining VFMs with UDA, setting new standards and baselines for Unsupervised Domain Adaptation in semantic segmentation.},
+    arxiv={2406.09896},   
+    code={https://github.com/tue-mps/vfm-uda},
+    bibtex_show={true},  
+    selected={false}
 }
 
 @inproceedings{kerssies2024benchmarking,
@@ -100,22 +121,6 @@
     code={https://github.com/tue-mps/benchmark-vfm-ss},
     bibtex_show={true},  
     selected={true}
-}
-
-@inproceedings{englert2024uda,
-    abbr={CVPRW},
-    author    = {Englert, Brun\'o B. and Piva, Fabrizio J. and Kerssies, Tommie and De Geus, Daan and Dubbelman, Gijs},
-    title     = {Exploring the Benefits of Vision Foundation Models for Unsupervised Domain Adaptation},
-    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
-    year      = {2024},
-    pages     = {1172-1180},
-    pdf={https://openaccess.thecvf.com/content/CVPR2024W/2WFM/papers/Englert_Exploring_the_Benefits_of_Vision_Foundation_Models_for_Unsupervised_Domain_CVPRW_2024_paper.pdf},
-    url={https://openaccess.thecvf.com/content/CVPR2024W/2WFM/html/Englert_Exploring_the_Benefits_of_Vision_Foundation_Models_for_Unsupervised_Domain_CVPRW_2024_paper.html},
-    abstract={Achieving robust generalization across diverse data domains remains a significant challenge in computer vision. This challenge is important in safety-critical applications, where deep-neural-network-based systems must perform reliably under various environmental conditions not seen during training. Our study investigates whether the generalization capabilities of Vision Foundation Models (VFMs) and Unsupervised Domain Adaptation (UDA) methods for the semantic segmentation task are complementary. Results show that combining VFMs with UDA has two main benefits: (a) it allows for better UDA performance while maintaining the out-of-distribution performance of VFMs, and (b) it makes certain time-consuming UDA components redundant, thus enabling significant inference speedups. Specifically, with equivalent model sizes, the resulting VFM-UDA method achieves an 8.4x speed increase over the prior non-VFM state of the art, while also improving performance by +1.2 mIoU in the UDA setting and by +6.1 mIoU in terms of out-of-distribution generalization. Moreover, when we use a VFM with 3.6x more parameters, the VFM-UDA approach maintains a 3.3x speed up, while improving the UDA performance by +3.1 mIoU and the out-of-distribution performance by +10.3 mIoU. These results underscore the significant benefits of combining VFMs with UDA, setting new standards and baselines for Unsupervised Domain Adaptation in semantic segmentation.},
-    arxiv={2406.09896},   
-    code={https://github.com/tue-mps/vfm-uda},
-    bibtex_show={true},  
-    selected={false}
 }
 
 @inproceedings{kerssies2023nas,
