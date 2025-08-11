@@ -10,7 +10,7 @@ profile:
   image_circular: false
   more_info: >
     <p>Frontier AI & Robotics, Amazon – San Francisco, USA</p><br/>
-    <p>Mobile Perception Systems Lab, Eindhoven University of Technology – Eindhoven, Netherlands</p><br/>
+    <p>Mobile Perception Systems Lab, TU/e – Eindhoven, Netherlands</p><br/>
     <p>t.kerssies[at]tue[dot]nl</p>
 
 news: true
